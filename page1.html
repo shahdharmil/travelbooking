@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Comfort Tours-n-Travels</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  padding-bottom: 50px;
+  padding-left:400px;
+  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-image:url('aussie.jpg');
+  width:500px;
+  height:300px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+@media screen and (max-width: 200px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+
+</style>
+
+</head>
+<body>
+<header>
+<div class="container">
+<div id="id1">
+<h1><span class="highlight">Comfort</span> Tours-n-Travels</h1>
+</div>
+<div class="topnav">
+<nav>
+<ul>
+<li class="current"><a href="page1.html">Home</a></li>
+<li><a href="Flights.html">Flights</a></li>
+<li><a href="bus.html">Bus</a></li>
+<li><a href="train.html">Train</a></li>
+<li><a href="car.html">Car</a></li>
+<li><a href="about.html">About us</a><li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<section id="showcase">
+<div class="container">
+<h2>Experience the next level Comfort!</h2><br>
+<p>The most comforting, luxurious and affordable traveling experience over the most beautiful holiday destinations.</p>
+
+</section>
+
+<section id="registration">
+<div id="container">
+<h2><a href="page2.html" style="color:#e8491d;">Click here</a>,for new account</h2>
+<form action="formprocess.php" method="post">
+<b>Sign In:  </b><input type="Email" placeholder="Enter Email...">
+<input type="password" placeholder="Enter Password...">
+<input type="submit" value="Sign In">
+</form>
+</div>
+</section>
+<div id="container1">
+<div class="card" style="width: 18rem;margin-top:5%;margin-left:35%">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">C</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+<div class="card" style="width: 18rem;margin-left: 5%;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+
+</div>
+<footer>
+<div id="container">
+<p>Follow us at:<br></p>
+<div id="fonts">
+  <i class="fa fa-facebook" style="font-size:48px"></i>
+  <i class="fa fa-instagram" style="font-size:48px"></i>
+  <i class="fa fa-twitter" style="font-size:48px"></i>
+</div>
+</div>
+<li><a href="map.html">Contact us</a><li>
+</footer>
+</body>
+</html>
